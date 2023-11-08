@@ -32,9 +32,12 @@ function getBooks() {
       button.classList.add("btn", "btn-danger");
       button.textContent = "scarta";
       cardBody.appendChild(button);
-  
-      listReaders.appendChild(card);
-    });
-  }
-  
+  button.onclick =  function () {
+    cardBody.remove();
+    };
+  listReaders.appendChild(card);
+});
+}
+
+
   getBooks();
